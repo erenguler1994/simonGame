@@ -3,7 +3,14 @@ var gamePattern = [];
 var userClickedPattern = [];
 var level = 0;
 var started = false;
+$(".startingButton").click(function() {
+  if(!started){
+  $('level-title').text("Level " + level);
+  nextSequence();
+  started = true;
 
+}
+});
 //ilk oyuna basladiginda bir kere calismasi icin start veriyor
   $(document).keypress(function() {
     if(!started){
