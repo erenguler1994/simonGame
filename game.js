@@ -42,6 +42,7 @@ function checkAnswer(currenLevel) {
     level = 0;
     gamePattern = [];
     userClickedPattern = [];
+    started = false;
   }
 }
 
