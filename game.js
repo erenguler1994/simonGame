@@ -5,7 +5,7 @@ var level = 0;
 var started = false;
 
 //ilk oyuna basladiginda bir kere calismasi icin start veriyor
-  $(document).keydown(function() {
+  $(document).keypress(function() {
     if(!started){
     $('level-title').text("Level " + level);
     started = true;
